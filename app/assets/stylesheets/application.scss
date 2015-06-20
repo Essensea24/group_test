@@ -1,0 +1,192 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+        margin-bottom: 0px;
+    }
+
+
+$bgHighlight : #F6F6F6;
+$colDefault     : #585858;
+$colHighlight   : white;
+
+
+.navbar-default {
+    background-color: #E9E581;
+    border-color: #DFE2DB;
+    .navbar-brand {
+        color: $colDefault;
+        &:hover, &:focus { 
+            color: $colHighlight; }}
+    .navbar-text {
+        color: black; }
+    .navbar-nav {
+        > li {
+            > a {
+                color: $colDefault;
+                &:hover,  &:focus {
+                    color: $colHighlight; }}}
+        > .active {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}
+        > .open {
+            > a, > a:hover, > a:focus {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}}
+    .navbar-toggle {
+        border-color: $bgHighlight;
+        &:hover, &:focus {
+            background-color: #FFF056; }
+        .icon-bar {
+            background-color: $colDefault; }}
+    .navbar-collapse,
+    .navbar-form {
+        border-color: $colDefault; }
+    .navbar-link {
+        color: $colDefault;
+        &:hover {
+            color: $colHighlight; }}}
+
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu {
+        > li > a {
+            color: $colDefault;
+            &:hover, &:focus {
+                color: $colHighlight; }}
+        > .active {
+            > a, > a:hover, > a:focus, {
+                color: $colHighlight;
+                background-color: $bgHighlight; }}}
+}
+
+
+body {
+    background-color: #FFF8F0;
+            position: relative;
+
+}
+
+.search {
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    margin-top: 10%;
+    display: inline-block;
+}
+
+.form-inline {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 2%; 
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*.fa-location-arrow{
+    width: 32px;
+    height: 34px;
+    border-radius: 15%;
+    background-color: #DE1B1B;
+    border: 2px solid #DE1B1B;
+    color: white;
+            margin-top: 2%;
+}*/
+
+.empty {
+       height: 50px;
+       width: 100%;
+       display: block;
+}
+
+#map {
+    display: none;
+    width: 80%;
+    height: 400px;
+    background-color: black;
+    margin: 0 auto;
+    padding-top: 5vw;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+}
+
+#center {
+    height: 2%;
+    width: 100vw;
+   margin: 0 auto;
+    list-style-type: none;
+    padding: 5%;
+}
+
+.btn-default {
+    background-color: #D9853B;
+    border: 2px solid #D9853B;
+    height: 34px;
+    color: white;
+    float: right;
+}
+
+
+#rotating-item-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;    
+}
+
+
+.rotating-item {
+
+    width: 65%;
+    display: none;
+ /*   opacity: 0.8;
+    filter: alpha(opacity=80);*/
+    margin: 0 auto;
+    list-style-type: none;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5%;
+    border: 5px solid white;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+
+hr {
+    width: 80%;
+    border: 1px solid grey;
+}
+
+#about {
+    color: blue;
+    background-color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: #E9E581;
+}
+
+.quote {
+    color: white;
+}
+
+.developer {
+
+    width: 30%;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center
+}
+
